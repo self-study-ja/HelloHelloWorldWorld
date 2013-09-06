@@ -1,50 +1,53 @@
 # -*- coding: utf-8 -*-
 
-# First object create
-true = bool(object)
-false = bool()
-
-# Number Literal create
-zero = int(false)
-one = int(true)
-two = sum([one, one])
-three = sum([two, one])
-four = two * two
-five = sum([three, two])
-six = three * two
-seven = sum([four, three])
-eight = two * two * two
-nine = three * three
-
-
-# String and Integer lizer
-def sz(*args):
-    strings = str()
-    for x in args:
-        strings += str(x)
-    return int(strings)
+_ = bool
+__ = object
+___________ = int
+____________ = sum
+_____________ = str
+______________ = chr
+___ = _(__)
+____ = _()
+_ = ___________(____)
+__ = ___________(___)
+___ = ____________([__, __])
+____ = ____________([___, __])
+_____ = ___ * ___
+______ = ____________([____, ___])
+_______ = ____ * ___
+________ = ____________([_____, ____])
+_________ = ___ * ___ * ___
+__________ = ____ * ____
 
 
-H = sz(seven, two)
-e = sz(one, zero, one)
-l = sz(one, zero, eight)
-o = int(str(one) * three)
-comma = int(str(four) * two)
-space = sz(three, two)
-W = sz(eight, seven)
-r = sz(one, one, four)
-d = sz(one, zero, zero)
-dot = sz(four, six)
+def ________________(*_):
+    __ = _____________()
+    for ___ in _:
+        __ += _____________(___)
+    return ___________(__)
 
 
-def chrize(*args):
-    strings = str()
-    for x in args:
-        strings += chr(x)
-    return strings
+H = ________________(________, ___)
+e = ________________(__, _, __)
+l = ________________(__, _, _________)
+o = ___________(_____________(__) * ____)
+comma = ___________(_____________(_____) * ___)
+space = ________________(____, ___)
+W = ________________(_________, ________)
+r = ________________(__, __, _____)
+d = ________________(__, _, _)
+dot = ________________(_____, _______)
 
 
-print chrize(H, e, l, l, o, comma, space, W, o, r, l, d, dot)
+def ____________________________(*__):
+    ____ = _____________()
+    for ___ in __:
+        ____ += ______________(___)
+    return ____
+
+
+print ____________________________(
+    H, e, l, l, o, comma, space, W, o, r, l, d, dot)
 
 # Helo,(space)Wrd.
 # >> result
