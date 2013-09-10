@@ -63,7 +63,7 @@ int main()
     metalist = get_singleton();
     
     struct ListNode *hello; 
-    hello = (struct ListNode *)malloc(sizeof(struct MetaListData));
+    hello = (struct ListNode *)malloc(sizeof(struct ListNode));
     init_listnode(hello);
     
     struct ListNode *world; 
