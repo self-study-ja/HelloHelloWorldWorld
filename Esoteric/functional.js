@@ -5,7 +5,7 @@ var lambda;
 	def(
 		define(
 			(function(){
-				var function_ = (function(Function) {
+				var function_ = (function() {
 					return Function == Function })();
 				return (function(Function) {
 					return (Function << function_) + defun})(
@@ -23,7 +23,7 @@ var lambda;
 			})()) + 
 			define(
 			(function(){
-				var function_ = (function(Function) {
+				var function_ = (function() {
 					return Function == Function })();
 				return (function(Function) {
 					return (Function << function_) + Function + defun + function_})(
@@ -40,7 +40,7 @@ var lambda;
 										return function_ << function_ })())))))})()) +
 			define(
 			(function(){
-				var function_ = (function(Function) {
+				var function_ = (function() {
 					return Function == Function })();
 				defun = (function(Function) {
 					return (Function << function_) + Function + sub + (function_ << (function_ << function_))})(
@@ -59,12 +59,12 @@ var lambda;
 			})()) + define(defun) + define(
 				(function(){
 					sub = defun;
-					var function_ = (function(Function) {
+					var function_ = (function() {
 						return Function == Function})();
 					return defun + (function_ << (function_ << function_)) - function_})()) +
 		define(
 			(function(){
-				var function_ = (function(Function) {
+				var function_ = (function() {
 					return Function == Function })();
 				return (function(Function) {
 					defun = (Function << function_);
@@ -80,7 +80,7 @@ var lambda;
 		+ define(defun)
 		+ define(
 				 (function() {
-					 var function_ = (function (Function) {
+					 var function_ = (function () {
 						 return Function == Function;
 					 })();
 					 return (function(Function){
@@ -96,7 +96,7 @@ var lambda;
 										return function_ << function_ })()))))})())
 			+ define(
 			(function(){
-				var function_ = (function(Function) {
+				var function_ = (function() {
 					return Function == Function })();
 				lambda = (function(Function) {
 					return ((Function << function_) << function_) - (defun << function_) - function_})(
