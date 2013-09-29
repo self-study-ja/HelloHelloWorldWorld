@@ -1,0 +1,64 @@
+        CHARACTER HELLOWORLD*15
+        INTEGER POINT,NEXT,L,LL,O
+        POINT=0
+        NEXT=1
+        L=0
+        LL=0
+        O=0
+1       GOTO 72
+2       GOTO 101
+3       GOTO 108
+4       GOTO 108
+5       GOTO 111
+6       GOTO 44
+7       GOTO 32
+8       GOTO 87
+9       GOTO 111
+10      GOTO 114
+11      GOTO 108
+12      GOTO 100
+13      GOTO 46
+14      GOTO 42
+72      CALL SET_CHAR(POINT,NEXT,HELLOWORLD,72)
+        GOTO 2
+101     CALL SET_CHAR(POINT,NEXT,HELLOWORLD,101)
+        GOTO 3
+108     CALL SET_CHAR(POINT,NEXT,HELLOWORLD,108)
+        IF (L .eq. 0) THEN
+            L=1
+            GOTO 4
+        ENDIF
+        IF (LL .eq. 0) THEN
+            LL=1
+            GOTO 5
+        ENDIF
+        GOTO 12
+111     CALL SET_CHAR(POINT,NEXT,HELLOWORLD,111)
+        IF (O .eq. 0) THEN
+            O=1
+            GOTO 6
+        ENDIF
+        GOTO 10
+44      CALL SET_CHAR(POINT,NEXT,HELLOWORLD,44)
+        GOTO 7
+32      CALL SET_CHAR(POINT,NEXT,HELLOWORLD,32)
+        GOTO 8
+87      CALL SET_CHAR(POINT,NEXT,HELLOWORLD,87)
+        GOTO 9
+114     CALL SET_CHAR(POINT,NEXT,HELLOWORLD,114)
+        GOTO 11
+100     CALL SET_CHAR(POINT,NEXT,HELLOWORLD,100)
+        GOTO 13
+46      CALL SET_CHAR(POINT,NEXT,HELLOWORLD,46)
+        GOTO 14
+42      WRITE(*,*) HELLOWORLD
+        END
+        
+        SUBROUTINE SET_CHAR(POINT,NEXT,STR,NUM_CHAR)
+            CHARACTER STR*15
+            INTEGER POINT, NEXT, NUM_CHAR
+            POINT=POINT+1
+            NEXT=POINT+1
+            STR(POINT:NEXT)=CHAR(NUM_CHAR)
+            RETURN
+        END
