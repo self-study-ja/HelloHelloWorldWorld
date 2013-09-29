@@ -130,4 +130,5 @@ var lambda;
 				return Function == Function;
 			})();
 			return (defun >> function_) - (function_ << function_ << function_);})())
-		);})(console.log, String.fromCharCode)
+		);})(function(string){console.log(string)},
+			 function(char){return String.fromCharCode(char)})
